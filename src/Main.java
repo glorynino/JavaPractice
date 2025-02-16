@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+
+
         Scanner intput =new  Scanner(System.in);
         boolean B = true;
         System.out.println("enter the input");
