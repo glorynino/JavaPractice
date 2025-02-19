@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Exercice_1 {
 
     public static void main(String[] args) {
 
@@ -8,13 +8,14 @@ public class Main {
         Scanner intput =new  Scanner(System.in);
         boolean B = true;
         System.out.println("enter the input");
+        int nombre = 1;
         do {
 
           try {
 
               if (intput.hasNextInt()) {
                   B = true;
-                  System.out.println("merci.");
+                  System.out.println("merci,le nombre d'essaie avant la reussite"+ nombre);
               }else{
                   B = false;
                   intput.next();
@@ -24,12 +25,9 @@ public class Main {
 
 
           } catch (Exception e) {
+              nombre++;
               System.out.println(e.getMessage());
           }
-
-
-
-
 
         }while(!B);
 
