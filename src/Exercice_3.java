@@ -24,16 +24,18 @@ public class Exercice_3 {
         }
 
     }
-
+    public static final String CYAN = "\u001B[36m";
+    public static final String RESET = "\u001B[0m";
+    public static final String GREEN = "\u001B[32m";
     public static void main(String[] args) {
         int n,m;
-        System.out.println("create ur matrixe");
+        System.out.println(CYAN+"Create your matrixe"+RESET);
         Scanner input = new Scanner(System.in);
        try {
-               System.out.println("enter the number of ligne ");
+               System.out.println(GREEN+"Enter the number of ligne ");
                n = input.nextInt();
                verif(n);
-           System.out.println("enter the number of colon ");
+           System.out.println("enter the number of colon "+RESET);
                m = input.nextInt();
                verif(m);
                int[][] array = new int[n][m];
